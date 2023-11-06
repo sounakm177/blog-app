@@ -58,7 +58,8 @@ A simple blogging application built with Laravel, Vue.js, inertia, HTML, CSS, Ja
    ```bash
    php artisan key:generate
 
-7. **Run database migrations:**
+
+7. **Run database migrations (Make sure you have set up your database configuration in the `.env` file.):**
    ```bash
    php artisan migrate:fresh --seed
    
@@ -73,7 +74,19 @@ A simple blogging application built with Laravel, Vue.js, inertia, HTML, CSS, Ja
 1. **Run the dev script in another terminal:**
    ```bash
    npm run dev
-   
+
+## User Credentials
+
+You can use the following user credentials to log in as test users:
+
+- User 1:
+  - Email: Sounak@gmail.com
+  - Password: password
+
+- User 2:
+  - Email: Sourav@gmail.com
+  - Password: password
+
 ## Screenshots
 
 Include project screenshots here:
