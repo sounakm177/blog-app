@@ -55,7 +55,7 @@ class PostController extends Controller
         $request->validate([
             'title' => ['required'],
             'text' => ['required'],
-            'image' => ['required'],
+            'image' => ['required','mimes:jpeg,png,jpg','max:2048'],
         ]);
 
         $this->postService->createPost($request->all());
@@ -72,11 +72,19 @@ class PostController extends Controller
 
     public function update(Request $request): RedirectResponse
     {
-        $request->validate([
+        $validation = [
             'id' => ['required'],
             'title' => ['required'],
-            'text' => ['required']
-        ]);
+            'text' => ['required'],
+        ];
+
+        if($request->file('image')){
+            $validation = array_merge($validation,[
+                'image' => ['mimes:jpeg,png,jpg','max:2048']
+            ]);
+        }
+        
+        $request->validate($validation);
 
         $this->postService->updatePost($request->all());
         return redirect('/post');
