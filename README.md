@@ -35,7 +35,7 @@ A simple blogging application built with Laravel, Vue.js, inertia, HTML, CSS, Ja
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/blogging-app.git
+   git clone https://github.com/sounakm177/blog-app.git
 
 2. **Change to the project directory:**
 
