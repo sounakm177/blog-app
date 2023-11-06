@@ -53,25 +53,33 @@ A simple blogging application built with Laravel, Vue.js, inertia, HTML, CSS, Ja
 5. **Create a copy of the .env.example file as .env and configure your database settings:**
    ```bash
    cp .env.example .env
-   
-6. **Generate an application key:**
+
+6. **Create a mysql database and enter database credentials in your .env file:**
+   ```bash
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=blog-app
+   DB_USERNAME=root
+   DB_PASSWORD=
+
+7. **Generate an application key:**
    ```bash
    php artisan key:generate
 
-
-7. **Run database migrations (Make sure you have set up your database configuration in the `.env` file.):**
+8. **Run database migrations (Make sure you have set up your database configuration in the `.env` file.):**
    ```bash
    php artisan migrate:fresh --seed
    
-8. **Create a symbolic link for storage:**
+9. **Create a symbolic link for storage:**
    ```bash
    php artisan storage:link
 
-9. **Start the development server:**
+1. **Start the development server:**
    ```bash
    php artisan serve
    
-1. **Run the dev script in another terminal:**
+2. **Run the dev script in another terminal:**
    ```bash
    npm run dev
 
@@ -91,9 +99,10 @@ You can use the following user credentials to log in as test users:
 
 Include project screenshots here:
 
-![Screenshot 1](https://github.com/sounakm177/demo-for-sounak/assets/64001743/303a0786-1cdd-4e02-ba5f-5c2b3a321cf3)
+![Screenshot 1](https://github.com/sounakm177/blog-app/assets/64001743/2017eee4-86b8-4c6a-be8f-ddfe6a6873dd)
 
-![Screenshot 2](https://github.com/sounakm177/demo-for-sounak/assets/64001743/3f6e53e0-1dfd-462a-956e-284d3311a73e)
+![Screenshot 2](https://github.com/sounakm177/blog-app/assets/64001743/6d48b131-3bc6-4479-b59a-bb8371519669)
 
-![Screenshot 3](https://github.com/sounakm177/demo-for-sounak/assets/64001743/cbe28021-bfa3-4500-9125-e1ef6a6112a0)
+![Screenshot 3](https://github.com/sounakm177/blog-app/assets/64001743/10fc20bd-426e-4f42-9a9a-a2a821ed75ed)
+
 
